@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>dogear</title>
+  <link rel="shortcut icon" href="images/favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="dogear.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/0.5.9/perfect-scrollbar.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+  <script type="text/javascript" src="turn.js"></script>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+  <script type="text/javascript" src="js/dragend.js"></script>
+
+  <script scr="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/0.5.9/perfect-scrollbar.min.css"></script>
+
+  <link href='https://fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'>
+</head>
+
+     <style>
+      /*set content height and width*/
+      .container { position:relative; margin:0px auto; padding:0px; width: 390px; height: 667px; overflow: auto; }
+      /*set actual content height and width that is scrollable*/
+      .container .content { width: 375px; }
+    </style>
+
+<body>
+
+<div class="container-fluid toosmall">
+  <div class="row">
+    <div class="col-sm-12"><img class="toosmallimage" src="images/cat_eyes.png"></div>
+  </div>
+    <div class="row help">
+    <div class="col-md-12"><p class="putmeback">Does it feel like the walls are closing in? Expand your browser window until I disappear to see the content! (Responsiveness coming soon)</p>
+    </div>
+  </div>
+
+</div>
+
+<div class="container-fluid projectsynopsis">
+
+  <div class="row">
+    <div class="col-md-12"><div id="header_hello" class="small-12 medium-5 large-4 large-pull-1 columns">
+      <h2 class="greeting">dogear</h2>
+    </div>
+    </div>
+  </div>
+
+  <div class="row"><div class="col-md-12"><hr class="break"></div></div>
+
+  <div class="row about">
+    <div class="col-md-12">A personal project, Dogear is a news aggregator that helps you share a story by “dogearing” the corner of the page to initiate the share form. My goal was to transform an intuitive action into a delightfully useful digital experience. The prototype below is interactive! Just follow the tooltips.
+    </div>
+  </div>
+
+</div>
+
+
+<div class="container-fluid prototype fixedwidth">
+
+
+<div class="toolfirst"><img class="tooltipmain" src="images/tooltipmain.png"></div>
+
+<div class="toolfirst"><img class="tooltipread" src="images/readtooltip.png"></div>
+
+<div class="toolsecond" style="display:none"><img class="tooltipback" src="images/backtooltip.png"></div>
+
+<div class="toolsecond" style="display:none"><img class="tooltipscroll" src="images/scrolltooltip.png"></div>
+
+<div class="toolsecond" style="display:none"><img class="tooltipdogear" src="images/dogeartooltip.png"></div>
+
+
+
+
+  <div class="mobileheader">
+
+      <div class="col-sm-2"><img class="menuicon" src="images/hamburger.png"></div>
+      <!-- <div class="col-sm-6 col-sm-offset-2"><p class="articlegenre">DESIGN</p></div> -->
+
+    <div class="row">
+      <div><hr class="headerbreak"></div>
+    </div>
+  </div>
+
+
+
+  <div id="demo" class="articlelist">
+    <ul>
+      <li class="first dragend-page" style="display:block;">
+        <div class="mobilepreview" style="min-width:375px;">
+              <div class="row">
+                <div class="col-sm-12"><img class="articleimage" src="images/article3image.jpg"></div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12"><h1 class="articletitle">Feds Demand Reddit Identify Users of a Dark-Web Drug Forum</h1></div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12"><p class="articlesource">Wired</p></div>
+              </div>
+        </div>
+      </li>
+
+      <li class="first dragend-page" style="display:block;">
+        <div class="mobilepreview">
+              <div class="row">
+                <div class="col-sm-12"><img class="articleimage" src="images/triangle-phil_jackson.jpg"></div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12"><h1 class="articletitle">How Phil Jackson and Tex Winter Redesigned Teamwork</h1></div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12"><p class="articlesource">Good</p></div>
+              </div>
+        </div>
+      </li>
+
+      <li class="first dragend-page" style="display:block;">
+        <div class="mobilepreview">
+              <div class="row">
+                <div class="col-sm-12"><img class="articleimage" src="images/Robert_Brunner.jpg"></div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12"><h1 class="articletitle">9 of the World’s Leading Designers Talk About What Matters</h1></div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12"><p class="articlesource">Wired</p></div>
+              </div>
+        </div>
+      </li>
+
+      <li class="first dragend-page" style="display:block;">
+        <div class="mobilepreview">
+              <div class="row">
+                <div class="col-sm-12"><img class="articleimage" src="images/article4image.jpg"></div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12"><h1 class="articletitle">How I Learned To Quit Worrying And Love My Facebook Friends</h1></div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12"><p class="articlesource">Wired</p></div>
+              </div>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+
+  <div class="mobilefooter">
+    <div class="col-sm-12"><img class="iconsavepreview" src="images/save.png"></div>
+  </div>
+
+
+
+
+<!-- <div id="holder">
+    <div class="dot"></div>
+    <div class="pulse"></div>
+</div>
+ -->
+
+
+  <div class="fullarticle" id="article2">
+    <div class="mobileheaderdisplay">
+
+        <div class="col-sm-2 goback"><img class="iconback" src="images/backarrow.png"></div>
+        <div class="col-sm-8"></div>
+        <div class="col-sm-2">
+          <div class="hasicon1"></div>
+        </div>
+       <hr class="mobileheaderbreak">
+
+    </div>
+
+  <div class="mobiledisplay">
+    <div class="container">
+        <div class="content">
+            <div class="row">
+              <div class="col-sm-12"><h1 class="articledisplaytitle">Feds Demand Reddit Identify Users of a Dark-Web Drug Forum</h1></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12"><p class="articlesourceauthor">ANDY GREENBERG | WIRED</p></div>
+              <div class="col-sm-12"><p class="articledate">MARCH 30, 2015</p></div>
+              <hr class="articlebreak">
+            </div>
+            <div class="row">
+                <div class="col-sm-12"><p class="articlebody">Over the last year, Reddit’s “dark net markets” discussion forum has grown into one of the central fixtures of the online drug scene.</p>
+                <p class="articlebody">At any given moment, hundreds of redditors are browsing reddit.com/r/darknetmarkets, many brazenly discussing anonymous online sales on the open internet.</p>
+                <p class="articlebody">Now the feds have noticed. And they’re telling Reddit to cough up a few of those users’ real-world identities.</p>
+                <p class="articlebody">Earlier this month, a Baltimore Department of Homeland Security (DHS) Immigration and Customs Enforcement agent sent a subpoena to Reddit demanding that the site turn over a collection of personal data about five users of the r/darknetmarkets forum. The subpoena appears to be the first hint of a federal investigation of the recently defunct massive online market known as Evolution, which sold drugs, weapons, and stolen financial details. All five targets of the subpoena were involved, to varying degrees, in the Reddit discussion of that black market’s abrupt disappearance two weeks ago, in which two top administrators apparently absconded with millions of dollars worth of bitcoin belonging to Evolution’s buyers and sellers.</p>
+                <p class="articlebody">According to a copy of the subpoena shared with WIRED by one of the forum’s moderators who was named in the document, the DHS seeks information that includes the names, IP addresses, dates and times of site visits as well as other data that Reddit likely doesn’t possess, including the users’ phone numbers and financial data. (Reddit doesn’t even require an email address to sign up.)</p>
+                <p class="articlebody">The subpoena’s five targets are NSWGreat, a user who had claimed to be an Evolution staffer; three other users named z-l, Deepthroat and Evosmith who boasted on Reddit that they were tracking Evolution’s administrators or identifying details about them; and Gwern Branwen, a well-known security researcher, writer and moderator of the darknetmarkets forum. It’s Branwen who has now publicly revealed the subpoena’s existence to WIRED. He says the DHS’s interest in him may be in part because Z-l had recently publicly promised to send proof of findings about Evolution’s administrators to him, though Branwen says he never received any such information.</p>
+                <p class="articlebody">Branwen says he sees z-l, Deepthroat, Evosmith and himself as likely red herrings for law enforcement, but that NSWGreat might be an actually important target of the government’s investigation into Evolution. The apparently Australian NSWGreat went so far as to host an “ask me anything” session on Reddit as an internet drug trafficker and public relations staffer for Evolution’s black market. “Given the date and the affected accounts, it doesn’t take Holmes to deduce the reason for this subpoena,” writes Gwern in a statement he sent to WIRED. “Just one naked connection revealing [NSWGreat’s] home IP would be enough, and if he’s like past market employees, a raid will turn up all the damning evidence one could hope for.”</p>
+                <p class="articlebody">Branwen adds that he himself has never sold illegal products on a dark web market or worked for any such site. He’s nonetheless troubled by DHS’s probe into his personal data. “How can I continue as a [Reddit] moderator,” he writes, “knowing that all my non-[encrypted] communications have been laid bare, there may be followup subpoenas for my Gmail account, and I may be under further investigation myself?”</p>
+                <p class="articlebody">When WIRED reached out to Reddit, a spokesperson pointed to the site’s privacy policy, which states that Reddit does collect IP addresses and other potentially identifying data from users, which it deletes after 90 days. The policy adds that it may disclose that data to law enforcement—or hold it longer than 90 days—if legally required to do so. Reddit’s spokesperson wouldn’t comment on whether or when the company might comply with the DHS subpoena.</p>
+                <p class="articlebody">The DHS didn’t respond to WIRED’s request for comment, but it’s no surprise that Evolution has become the target of a federal investigation. The site, which was online for just over a year, was by some measures the largest-ever drug market on the dark web, with 34,000 total drug listings at its peak. A week before the site’s disappearance, German police arrested the leaders of one drug ring that operated on the site and seized 700 pounds of narcotics from that single bust alone. The two pseudonymous administrators of Evolution, Verto and Kimble, are believed to have taken as much as $12 million from the site’s users at the time of its shutdown, after a year of collecting commissions on every sale.</p>
+                <p class="articlebody">Evolution’s shutdown helped to highlight just how central Reddit’s r/darknetmarkets community has become to the dark web’s drug economy in recent months. After the Evolution incident—along with market disruptions like the takedown of several top sites by law enforcement last November—buyers and sellers have congregated on r/darknetmarkets to regroup and reconnect. The forum has nearly 50,000 subscribers. That’s less than other reddit drug forums like r/drugs and the marijuana-focused r/trees, but those larger groups don’t so explicitly discuss drug sales. Though r/darknetmarket’s rules ban any direct dealing on Reddit, the site maintains a directory of links to the most popular dark web drug markets and comprehensive tutorials on using them. Buyers frequently post reviews of dealers’ products, and weekly threads like What to Buy Wednesday and Sell Your Shit Sunday let vendors advertise their wares.</p>
+                <p class="articlebody">The DHS’s subpoena will no doubt serve as a jarring reminder to Reddit’s dark web drug forum that those discussions are nakedly public and potentially vulnerable to law enforcement. Though the drug sales themselves are generally hosted on sites that require users to run the anonymity software Tor to hide their identities, Reddit offers no such protection. Branwen says he expects his revelation of the subpoena to drive many of r/darknetmarket’s conversations to Tor-protected forums like the drug-market discussion site called the Hub. “Riskier discussions will move onto the Hub, and as long as the Reddit admins don’t get spooked and shut it down similar to /r/jailbait, [r/darknetmarkets] will remain a useful discussion place,” he says.</p>
+                <p class="articlebody">Branwen’s reference to r/jailbait, a forum banned in 2011 where users posted scantily clad pictures of underage girls, highlights that Reddit has, in fact, been cleaning up some of its more controversial underground communities. More recently Reddit shut down other groups like r/creepshots and r/thefappening, which hosted links to stolen or surreptitiously taken nudes or revealing images or women.</p>
+                <p class="articlebody">Drug-dealing discussions, for now, remain fair game for Redditors. But it’s apparent they’re fair game for law enforcement investigators, too.
+                <img style="height:20px; margin-left: 16px;" src="images/square.png"></p>
+                <p class="articlebody"><img style="height:60px" src="images/empty.png"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!--close mobiledisplay-->
+  </div> <!--close fullarticle-->
+
+
+<div class="fullarticle" id="article3">
+    <div class="mobileheaderdisplay">
+
+          <div class="col-sm-2 goback"><img class="iconback" src="images/backarrow.png"></div>
+          <div class="col-sm-8"></div>
+          <div class="col-sm-2">
+            <div class="hasicon2"></div>
+          </div>
+          <hr class="mobileheaderbreak">
+
+    </div>
+  <div class="mobiledisplay">
+    <div class="container">
+        <div class="content">
+            <div class="row">
+              <div class="col-sm-12"><h1 class="articledisplaytitle">How Phil Jackson and Tex Winter Redesigned Teamwork</h1></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12"><p class="articlesourceauthor">BETHLEHEM SHOALS | GOOD</p></div>
+              <div class="col-sm-12"><p class="articledate">SEPTEMBER 23, 2015</p></div>
+              <hr class="articlebreak">
+            </div>
+            <div class="row">
+                <div class="col-sm-12"><p class="articlebody">In the digital age, it’s never been easier for like-minded, talented individuals to find each other—or for companies with cash to burn to recruit them. There’s a romance to technology as it culls, compiles, and practically backlogs people you virtually know, want to know, or might as well know even if it’s only by reputation.</p>
+              <!--   <div class="col-sm-12"><img style="width:100%; margin-top:5px; margin-bottom:10px" src="images/articleimage1.jpg"></div> -->
+                <p class="articlebody">I’ve had the good fortune to work on several web projects, most of them rabid attempts to bridge the gap between high-minded criticism and good old-fashioned sports appreciation, that grew out of this petri dish of talent. The hierarchy of professionals and amateurs was long ago reduced to rubbish by the digital revolution; needing little encouragement, people found themselves as writers—and found audiences for their work.</p>
+
+                <p class="articlebody">But the prime defect of this abundance of talent has, without question, been organization. Maybe it’s the casual nature of it all. Maybe it’s the lack of practice. Or, who knows, maybe there’s just too much happening, much too fast, for things to settle into a structure. Whatever the case, it feels like these noble, promising creative ventures tend to fall into the same patterns: Nobody’s in charge, everybody has a voice, and nobody feels comfortable restoring order. We’re all too busy…being good at stuff.</p>
+
+                <p class="articlebody">What I’m referring to doesn’t involve rampant egoism in the traditional sense, more too many people who simply don’t know any better than to run wild as the creative “I.” Regardless, the net effect is the same: Nobody has a responsibility to the larger organism.</p>
+
+                <p class="articlebody">It would really have helped things if there were some easy strategy for building community out of short-term, fragmentary relationships, if there had been a pragmatist’s approach to getting along that acknowledged that drive we all have to do it on our own (or pretend the rest of the world doesn’t exist).</p>
+
+                <p class="articlebody">I really should’ve known better. Exactly that strategy was close at hand for me, since I spent so much of the last decade or so writing about basketball for various web formations. Between 1991 and 2011, 11 of the 20 NBA titles were racked up by Phil Jackson, head coach of the Chicago Bulls and then the Los Angeles Lakers. Jackson is known for three things: expertly managing superstar personalities, passing out esoteric reading assignments to professional athletes, and running the triangle offense, a system devised by longtime assistant coach Frederick “Tex” Winter. The triangle is first and foremost a blueprint for effective basketball. However, it could also do a lot to help us understand how organization can take root when hierarchy has fallen and the surrounding ground has gone mushy as it has in the less hierarchical workplace of today.</p>
+
+                <p class="articlebody">Jackson’s 11 titles are a league record. He coached Michael Jordan, Scottie Pippen, Shaquille O’Neal, and Kobe Bryant. He’s also something of an eccentric, prescribing to his players Buddhist meditation and Great Books, matching texts to individuals based on their distinct personalities. Jackson’s detractors will tell you that anyone can win with Jordan or Bryant; backhanded praise would label him a mystic, or a master manipulator. But these interpretations leave out the triangle itself, which is equal parts system, idea, and open-ended fiat. The triangle understands how to spin community out of parties who, on some level, are inherently opposed to the idea—and should be. In basketball terms, it’s how you make model teammates out of gargantuan individualists.</p>
+
+                <p class="articlebody">Basketball, like all team sports, has a built-in ethical question. Does the talented individual try to win on his own, or trust in his lesser teammates? It’s the predicament of modern life, the interplay of freedom and structure that preoccupied most 20th century thought. Naturally, the answer lies somewhere between the two extremes. Pure individualism defeats the purpose of cooperation. Yet when cooperation becomes deference, then sacrifice becomes an end in itself. That’s fine and good for ascetics or martyrs, not so great for those human pursuits where getting ahead counts for something.</p>
+
+                <p class="articlebody">Unfortunately, basketball has from the beginning had a distinctly moralizing sting to its strategy. Teamwork and lack of ego build character; playing into the system shows admirable maturity and discipline; eschewing heroics is the mark of a true hero. This self-serving claptrap grows out of the idea that sports are common decency, warfare, and a proxy for education all rolled up together. They’re also supposedly an incubator for character, a view that has increasingly come to define both the way youth sports are run and the badly disingenuous discourse surrounding college athletics.</p>
+
+                <p class="articlebody">The problem with basketball as a generator of values is that, in any game, there comes a point when the best player on the floor should take precedence and prove himself exceptional. There are winners and losers when the buzzer sounds; there is not only a hierarchy of outcomes at the end of the game, there’s the fact that competition means putting others in their place. Sports may have a binary outcome, but the process of getting there is not about the pursuit of absolute truth but a distinctly situational, even contingent, understanding of what constitutes the best decision. And that’s as sports should be. The only right answer is the one that wins. From second to second, what that demands, who that might involve, and whose feet might get stepped on (or pride swallowed) remains unpredictable. There’s no such thing as absolute restraint or a top-down order of importance. Each game, each play, is its own order. You roll with it and create within the tiny world that’s opened up before you. That’s where Jackson and, even more notably, Winter, pick up the thread.</p>
+
+                <p class="articlebody">The triangle was always with Tex Winter in some form. Winter, a transplant to Southern California, was struck by the style of basketball played at his high school. There was constant motion on the floor; the floor was spaced evenly and involvement by the whole team was total—active, never passive, despite the emphasis on the collective. As Winter himself progressed as a player and then young coach at Marquette University and then at Kansas State, these ideas formed the core of his philosophy. They took the conventional wisdom of coaching and turned it from finger-wagging forbearance—a reason not to do something—into a process that incentivized creative engagement.</p>
+
+                <p class="articlebody">Winter didn’t invent the triangle. Sam Barry, for whom Winter played at the University of Southern California, originated the triple-post offense, from which the triangle was derived. Barry’s central innovation was to think in terms of key positions on the floor, which players shifted in and out of depending on the situation on the court. The center under the basket, the forward out on the wing, and the guard at the top of the key form the eponymous triangle or triple-post; these three, or equivalent players moving into their positions, form the backbone of the offense. It’s less a series of set plays and more a collection of scenarios or options.</p>
+
+                <p class="articlebody">With the triangle, there is a system, a master plan that governs movement on the floor. But rather than prescribe and proscribe, the triangle puts decision making in the hands of the players. Players aren’t imposed upon by the system; they are the system. It is, in essence, the difference between morals and ethics. The triangle doesn’t provide answers or presume to know the answer outside of the context of game play. Instead, it offers up guidelines for cooperation, suggestions of how we can, in short, get along and achieve a common goal. And yet the impetus stems from the particular, not the universal. Order isn’t something you decide on in advance—it’s a puzzle to be solved, drawing on the collective resources of the group.</p>
+
+                <p class="articlebody">How exactly the triangle works depends in large part on the team implementing it. The Bulls had Jordan and Pippen; when the Lakers had Shaq and Kobe, some of the emphasis shifted to the interior of the court. But these were decisions within the triangle, not decisions made about it. They were common sense, real-time judgments. Teams, whether in basketball or elsewhere in the world, need to both know themselves and be able to address what’s in front of them. The tension between plan and individual is, in a sense, the very flexibility needed to organize in a dynamic, multidirectional way.</p>
+
+                <p class="articlebody">Winter was hardly a dynamo college coach; in the hands of less experienced players, the triangle only yielded so much. Brought to the NBA, though, the offense had a radically different effect. Even though it invited engagement on the part of players, something that the most puritanical forms of basketball seemed to discourage, the flexibility of the triangle itself meant that the less prescriptive it was, the larger it loomed in a team’s play. To internalize the triangle and bring it out onto the floor was about much more than X’s and O’s. Literally or figuratively, you could always discern some form of it, no matter how the Bulls or Lakers actually implemented it in a given instance.</p>
+
+                <p class="articlebody">It wasn’t half-court sets or drawn-up plays, but another, more subtle kind of tyranny altogether. The triangle may have offered more to players but it also demanded more of them. It bridged the gap between homily and everyday play, thus making it difficult for players to say all the right things and then do them wrong. To put things in theoretical terms, the triangle bridged the schism between intention and execution on the basketball court.</p>
+
+                <p class="articlebody">That’s why Michael Jordan at first resisted, just as Kobe Bryant would some years later. The triangle exploits the tension between agency and creativity. It seeks to resolve that tension by finding a way to transmute one into the other. Yet for players used to dominating games through individual virtuosity, it came as a rude awakening. The triangle obliterated the either-or binary; there were no longer moments of team punctuated, rudely but necessarily, by a Jordan improvisational flight. Instead, the star became a limb, part of a living, breathing team body.</p>
+
+                <p class="articlebody">Underlying every one of Phil Jackson’s pronouncements or supernatural pep talks, a system put into practice exactly what the zen master preached: Winter. If Jackson was the high priest of a peculiar brand of selfless, organic basketball, Winter was its chief bureaucrat—and some would say, its real architect. It’s important to remember, though, that the triangle is equal parts meditation on teamwork and very specific options for activity on the floor.</p>
+
+                <p class="articlebody">Jackson has been deemed by some to have his head in the clouds, or, at the very least, function at a level of abstraction that calls into question his real utility as a coach. When paired with Winter, though, his ideals have a vehicle, a grounding. It’s also fair to say that Winter himself was only so ambitious in his aims until Jackson brought him into the fold in Chicago. Suddenly, a strategy for playing the game was elevated to metaphysical doctrine, and Jackson’s metaphysics found the implementation they needed.</p>
+
+                <p class="articlebody">For the past 20 years, it is not Jackson, but the other coaches, the ones insisting on teamwork and proper behavior without any way to humanize these qualities, who seem most divorced from reality. They are the ones proffering ideas that have no place in basketball, at least not in such a rigid form, as well as ways of playing the game that do nothing to acknowledge the individual players—much less open out onto the world outside of sport.</p>
+
+
+                <p class="articlebody">The Jackson-Winter partnership won titles. But, more importantly, it showed just how lofty thinking about sports can get while still remaining practical. In fact, the duo’s unprecedented run of success suggests that dealing with athletes as individuals is not separate from directing them on the floor. In the end, maybe the real lesson of the triangle is that our social organisms don’t need to be turned into teams of automatons in order to thrive. A healthy structure for decision making might be just as important to overall success as any particular game plan.
+                <img style="height:20px; margin-left: 16px;" src="images/square.png"></p>
+                <p class="articlebody"><img style="height:60px" src="images/empty.png"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!--close mobiledisplay-->
+  </div> <!--close fullarticle-->
+
+<div class="fullarticle" id="article4">
+    <div class="mobileheaderdisplay">
+        <div class="col-sm-2 goback"><img class="iconback" src="images/backarrow.png"></div>
+        <div class="col-sm-8"></div>
+        <div class="col-sm-2">
+          <div class="hasicon3"></div>
+        </div>
+        <hr class="mobileheaderbreak">
+    </div>
+  <div class="mobiledisplay">
+    <div class="container">
+        <div class="content">
+            <div class="row">
+              <div class="col-sm-12"><h1 class="articledisplaytitle">9 of the World’s Leading Designers Talk About What Matters</h1></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12"><p class="articlesourceauthor">KYLE VANHEMERT | WIRED</p></div>
+              <div class="col-sm-12"><p class="articledate">January 14, 2015</p></div>
+              <hr class="articlebreak">
+            </div>
+            <div class="row">
+                <div class="col-sm-12"><p class="articlebody">Design is in flux. Where its practitioners were once expected to produce chairs, lamps, logos and letterheads, today their work is often less visible. Increasingly, design is concerned with interactions and experiences—it’s about software and the vast systems that power it. We asked nine top designers to talk about their craft and what it means today. Here’s what they said. </p>
+                <div class="col-sm-12"><img style="width:100%; margin-top:5px; margin-bottom:10px" src="images/designers/Robert_Brunner.jpg"></div>
+                <p class="articlebody"><strong>There seems to be a difference between how most people perceive design and what designers really do. Why?</strong><br>People don't realize that their entire lives are shaped by a designer's work—from their home to their car to their office to nearly every object they use. We're deeply affected by the things other people have created, which outlines the importance of what designers do. But most people don't think this way. They assume things plopped out of a factory somewhere. By contrast, designers must see more deeply. The most valuable lesson they can learn is to keep their eyes open.</p>
+                <div class="col-sm-12"><img style="width:100%; margin-top:5px; margin-bottom:10px" src="images/designers/Gentry_Underwood.jpg"></div>
+                <p class="articlebody"><strong>What's one overlooked or underappreciated way in which design affects our lives?</strong><br> Great design often disappears, leaving the user with no more than a simple and intuitive experience. This “invisible” design is all around us—in those airports where we have no trouble finding our flight, when we know just where to stand when waiting for a table, or when we thoughtlessly switch out the lights in a hotel room we've never been in before. It's only when we can't do common actions like these—when we fuss and fiddle and find ourselves lost—that the opportunity for design becomes apparent. </p>
+                <div class="col-sm-12"><img style="width:100%; margin-top:5px; margin-bottom:10px" src="images/designers/Jack_Schulze.jpg"></div>
+                <p class="articlebody"><strong>How is the current moment in design different from those before?</strong><br> When I was studying graphic design in the late '90s, there was a dream that as a designer, if you were good enough, you might create an archetype for the age—the sorts of things you see in Mad Men, artifacts and images that characterize an era. But when I graduated, it became abundantly clear that when people looked back on the decade to come, they would not be looking at record covers or chairs. It was going to be glowing rectangles and software. People would remember the aesthetics and noises of operating systems, the first time they pinch-zoomed something, the aesthetics of Google Maps, the Nokia ringtone, and Candy Crush Saga.</p>
+                <div class="col-sm-12"><img style="width:100%; margin-top:5px; margin-bottom:10px" src="images/designers/Kim_Collin.jpg"></div>
+                <p class="articlebody"><strong>How has the role of the designer changed since you first started?</strong><br>The discipline has entered popular culture in funny ways recently—some of which we should celebrate and some we should be wary of. But this hasn't changed the fact that there is still no consensus about the role of our work. Are you a stylist? Do you serve brands? Do you make things? Did you invent that technology? Are you a philosopher? Can you fix a TV? I've been asked all of these! We continue to ask, what is design? And this is a healthy question to ask and to keep asking. Design is a collaborative effort between designers, manufacturers, distributors, and consumers. Raising questions propels us toward better things.</p>
+                <div class="col-sm-12"><img style="width:100%; margin-top:5px; margin-bottom:10px" src="images/designers/Jonas_Damon.jpg"></div>
+                <p class="articlebody"><strong>How have the problems you work on changed in recent years?</strong><br>Designers have had to become hybrids. In the '60s, '70s, and '80s, the industrial designer's role was clear: Create a physical object. Now I have to understand the technology that drives it, the physical components, the sensors, the ecosystem. I need to understand how a person will interact with it—whether that's on the object itself or a smartphone app. I need to understand how it fits in with the brand. High design was once much more exclusive. Now it has trickled down and touches so much. Because of that, the designer has to be far more aware of society—and much more sensitive to it.</p>
+                <div class="col-sm-12"><img style="width:100%; margin-top:5px; margin-bottom:10px" src="images/designers/Natasha_Jen.jpg"></div>
+                <p class="articlebody"><strong>Technology is not only changing how we design, but also the types of things we design. How has this affected your work?</strong><br>Obviously, technology has been shaping every design discipline. It creates new needs and desires on an unimaginable scale. It also establishes new criteria for evaluating how design works. For example, graphic design is an indispensable part of all digital interfaces—so it has never been scrutinized so closely for performance. It's an amazing time to be a designer: There's so much terrain that's yet to be discovered. There's so much yet to be tested and so much yet to be improved. It's fascinating to think how design now will be viewed in 20, 50, or 100 years.</p>
+                <div class="col-sm-12"><img style="width:100%; margin-top:5px; margin-bottom:10px" src="images/designers/Bethany_Koby.jpg"></div>
+                <p class="articlebody"><strong>Describe a case where thoughtful design has an impact beyond just producing a prettier object.</strong><br> I have become increasingly excited about service design. When a service experience has really been thought through, it can make a lasting impression on someone's life. My example is having a child here in the UK, under the care of the National Health Services. It was incredible. Someone designed this experience with empathy and creativity. Not only did I have both digital and printed records of my doctor's visits along my nine-month journey, but I also had access to classes, a midwife, and automatic reminders about doctor's appointments and my son's development milestones. And all of this was for free!</p>
+                <div class="col-sm-12"><img style="width:100%; margin-top:5px; margin-bottom:10px" src="images/designers/Mia_Blume.jpg"></div>
+                <p class="articlebody"><strong>What everyday object or product do you find especially well designed, and why?</strong><br> I love the design of books. Not ebooks, real books. Books represent one of our oldest utilities and communication tools. Their design—from the structure to the art of the page—has been developed over centuries to relay information and stories. Every aspect is designed for function and production, yet books remain a nuanced craft, from the binding to the serifs on a page. Even today, our digital versions seek to imitate the structure, workmanship, and emotional connection of a well-honed volume.</p>
+                <div class="col-sm-12"><img style="width:100%; margin-top:5px; margin-bottom:10px" src="images/designers/Alexis_Lloyd.jpg"></div>
+                <p class="articlebody"><strong>What big problem keeps you up at night?</strong><br>We're seeing new relationships emerging between people and technology. Algorithms influence an ever-increasing number of facets of our lives: the media we consume, what our health insurance knows about our physical condition, whether we're approved for loans or hired for jobs, and whom we may date or marry. But we don't have much agency in those interactions. These “smart” systems are black boxes, eschewing transparency in favor of simplicity. But when we can't interrogate a system, that disenfranchises us. Designers now must facilitate interactions that balance ease of use with transparency.
+                <img style="height:20px; margin-left: 16px;" src="images/square.png"></p>
+                 <p class="articlebody"><img style="height:60px" src="images/empty.png"></p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!--close mobiledisplay-->
+  </div> <!--close fullarticle-->
+
+  <div class="fullarticle" id="article5">
+    <div class="mobileheaderdisplay">
+        <div class="col-sm-2 col-xs-2 goback"><img class="iconback" src="images/backarrow.png"></div>
+        <div class="col-sm-8 col-xs-8"></div>
+        <div class="col-sm-2 col-xs-2">
+          <div class="hasicon4"></div>
+        </div>
+        <hr class="mobileheaderbreak">
+    </div>
+  <div class="mobiledisplay">
+    <div class="container">
+        <div class="content">
+            <div class="row">
+              <div class="col-sm-12"><h1 class="articledisplaytitle">How I Learned to Quit Worrying and Love My Facebook Friends</h1></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12"><p class="articlesourceauthor">JESSI HEMPEL | WIRED</p></div>
+              <div class="col-sm-12"><p class="articledate">March 31, 2015</p></div>
+              <hr class="articlebreak">
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12"><p class="articlebody">“There should be a word for when you nearly pass a Facebook friend on the street; then recognize her; then realize you know she and her daughter got a manicure this morning (because you “liked” the photo; so cute!); then realize you haven’t sent her a personal message since you both became friends after you met at a wedding in 2010; then look away and pick up your pace.”</p>
+                <p class="articlebody">I wrote that on Facebook last week. What’s this called, I asked my other Facebook friends. I got a broad range of answers: Wallflowering. Facial(book) recognition. Friendenfreude. A Facebookship. And from one honest pal, “It used to be called stalking. :-)”</p>
+                <p class="articlebody">What is clear is that whatever we are to each other, this woman and I are not friends. But, then again, we’re not not-friends either. I remember when her daughter was born, and when that same daughter did a face plant into a plate of cupcakes on her first birthday. And because I “liked” these pictures and videos, Facebook’s newsfeed algorithms recognized our weird one-way connection and served me more of them, which I continued to like, and like some more. And I want to keep “seeing” her in my newsfeed. Yet talking to her in real life seems completely beside the point. So what exactly is our relationship? Awkward might be the operative word.</p>
+                <p class="articlebody">Today, I have 1,819 Facebook friends. There are some I’d like to sit around and watch TV with. But most of them I want to watch like TV. They are programming I flip through on a nearly infinite set of channels. I watch the visual narratives of their lives unfold over multiple seasons, reality shows that go on indefinitely.</p>
+                <p class="articlebody">A decade ago when I first joined the ‘book, I just wanted to spy on my exes. Then for a while, I attempted to adjust my privacy settings to reflect my perceived level of intimacy with each new friend, so that I led parallel friendships with my virtual avatar, Facebook Jessi. I created a group called “Bio Family” to which I invited people with whom I share a blood tie and their spouses, and I used it to update them on birthday celebrations. I “unfollowed” all of the people whose strident #humblebrags annoyed me (“What the hell does one wear to a private meeting with President Obama?”) and made lists of people I knew only casually who shouldn’t see that picture of me at the beach last summer. But between the ever-changing friendships and the ever-changing privacy settings, I gave up. So did Facebook Jessi.</p>
+                <p class="articlebody">Now, the people I watch closely aren’t those I love most. After all, the people I love the most I am in constant contact with and don’t need Facebook to connect us. No, the people I watch closely are the most talented Facebook producers–the people who use their posts to tell fabulous stories. There’s the woman I met in high school whose family was always slightly wealthier than mine, and who has grown up to inhabit a gorgeous Brooklyn brownstone and spend summers at the beach with two adorable children who like to finger paint at the picnic table. There’s the work acquaintance from that time I went to TED in 2007 who moved to a village of reindeer herders in Norway. At least I think that’s what happened, based on the amazing photos and videos she posts. When her cat Boo turned up after three months wandering the Arctic tundra last summer, I cheered (and “liked”) the reunification.</p>
+                <p class="articlebody">I root for these women. I care about them. If life had unfolded differently and I had landed in closer daily proximity to either of them, I’m certain they’d be confidants. As it is, I absorb their posts for the same reasons I watch my favorite tv shows: compelling stories, beautiful people, a sense of escape. And one more addictive element: the promise of connection. I know these people in these circumstances.</p>
+                <p class="articlebody">But then, what’s the proper etiquette when I run into them? The mountain of detail we know about each other from the virtual realm colors these unplanned IRL interactions with a strange illicit feeling. What I’m describing is the digital equivalent of looking into your windows on a dark night. You’re the one who left the curtains open. You live on a busy street. But if we happen to make eye contact while I’m watching you serve mac and cheese to the kids, we both feel slightly violated.</p>
+                <p class="articlebody">There’s a precedent for this uneven distribution of information versus intimacy, and it’s called celebrity. Take, say, Meryl Streep. I may know that she got a manicure with her daughter last week because I read it in the pages of US Weekly, but knowing that would never lead me to approach her on the street and presume we knew each other.<img style="height:20px; margin-left: 16px;" src="images/square.png"></p>
+                 <p class="articlebody"><img style="height:60px" src="images/empty.png"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!--close mobiledisplay-->
+  </div> <!--close fullarticle-->
+
+
+<script>
+    $( document ).ready(function() {
+      $('body').on('click', '.hasicon1', function() {
+        console.log("clicked");
+        $('.hasicon1').prepend('<img src="images/fold_2.png" class="dogearappear">');
+      });
+    });
+</script>
+
+<script>
+    $( document ).ready(function() {
+      $('body').on('click', '.hasicon2', function() {
+        console.log("clicked");
+        $('.hasicon2').prepend('<img src="images/fold_2.png" class="dogearappear">');
+      });
+    });
+</script>
+
+<script>
+    $( document ).ready(function() {
+      $('body').on('click', '.hasicon3', function() {
+        console.log("clicked");
+        $('.hasicon3').prepend('<img src="images/fold_2.png" class="dogearappear">');
+      });
+    });
+</script>
+
+<script>
+    $( document ).ready(function() {
+      console.log("clicked");
+      $('body').on('click', '.hasicon4', function() {
+        $('.hasicon4').prepend('<img src="images/fold_2.png" class="dogearappear">');
+      });
+    });
+</script>
+
+
+<!--     <script>
+      window.onload = function () {
+        [].forEach.call(document.querySelectorAll('.container'), function (el) {
+          Ps.initialize(el);
+        });
+      };
+    </script> -->
+
+
+
+
+
+<script>
+    $(function() {
+      var firstChild = $("#demo li:first-child").clone(),
+      lastChild  = $("#demo li:last-child").clone(),
+      container  = $("#demo ul");
+      firstChild.appendTo(container);
+      lastChild.prependTo(container);
+      $("#demo").dragend({
+        jumpToPage: 2,
+        onSwipeEnd: function() {
+          var first = this.pages[0],
+          last = this.pages[this.pages.length - 1];
+          if (first === this.activeElement) {
+            this.jumpToPage(this.pages.length - 1 );
+          }
+          if (last === this.activeElement) {
+            this.jumpToPage(2);
+          }
+        },
+        afterInitialize: function() {
+          this.container.style.visibility = "visible";
+        }
+      });
+    });
+</script>
+
+
+<script>
+    $( document ).ready(function() {
+        $('.articlelist ul li').dblclick(function() {
+          var i = $(this).index();
+
+          $('#demo, .dragend-page, .mobileheader, .mobilefooter').hide();
+
+          $('.fullarticle').hide();
+          $('#article' + (i+1)).show();
+          $('.toolfirst').hide();
+          $('.toolsecond').show();
+          // $('.dogearappear').show();
+
+        });
+    });
+</script>
+
+<script>
+    $( document ).ready(function() {
+      $('.iconback').click(function() {
+
+        $('#demo, .dragend-page, .mobileheader, .mobilefooter').show();
+        $('#article2, #article3, #article4, #article5').hide();
+        $('.toolfirst').show();
+        $('.toolsecond').hide();
+        // $('.hasicon').hide();
+      });
+    });
+</script>
+
+
+</body>
+</html>

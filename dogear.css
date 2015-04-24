@@ -1,0 +1,429 @@
+
+* {
+      padding: 0;
+      margin: 0;
+      border: 0;
+}
+
+.greeting {
+  text-align:right;
+  padding-right:50px;
+  padding-top:30px;
+  font-family: 'Open Sans', sans-serif;
+  font-size:35px;
+  color:black;
+  font-weight:600;
+}
+
+.about {
+  text-align:right;
+  padding-right:50px;
+  padding-top:10px;
+  font-family: 'Open Sans', sans-serif;
+  font-size:15px;
+  color:black;
+  font-weight:300;
+  max-width:600px;
+  float:right;
+  line-height: 1.6667em;
+}
+
+.break {
+  width: 30px;
+  border: 1px solid black;
+  margin-right: 50px;
+  margin-top: 30px;
+  float:right;
+}
+
+.containerpic {
+  position:relative;
+  margin:0px auto;
+  padding:0px;
+  width: 600px;
+  height: 400px;
+  overflow: auto;
+}
+
+#container {
+  position: relative;
+  width: 100%;
+}
+
+.mobile-navigation {
+  width: 0;
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 200;
+}
+
+.fullarticle {
+  display: none;
+}
+
+.articleabsolute {
+  position:absolute;
+}
+
+.prototype {
+  padding:80px;
+  background-color:#ededed;
+}
+
+.mobileheader, .mobileheaderdisplay{
+  height:62px;
+  overflow:hidden;
+  max-width:375px;
+  min-width:375px;
+  max-height:62px;
+  background-color:white;
+  margin: 0 auto;
+}
+
+.mobilepreview {
+  max-width:375px;
+  min-width:375px;
+}
+
+.mobilefooter{
+  overflow:hidden;
+  max-width:375px;
+  min-width:375px;
+  height:62px;
+  background-color:white;
+  margin: 0 auto;
+}
+
+.mobilefooterdisplay {
+  overflow:hidden;
+  max-width:375px;
+  min-width:375px;
+  background-color:white;
+  margin: 0 auto;
+}
+
+#demo {
+  visibility: hidden;
+  width:375px;
+  /*height:667px;*/
+  height:550px;
+  overflow:hidden;
+  background-color:white;
+  /*background-color:#fafafa;*/
+  margin-top:50px;
+  margin: 0 auto;
+}
+
+
+.projectsynopsis {
+  padding:60px;
+  background-color:#fafafa;
+}
+
+.projecttitle {
+  font-family: 'Lato', sans-serif;
+  font-weight:400;
+  font-size: 80px;
+  text-align: center;
+  margin-top:40px;
+}
+
+.projectdescription {
+  font-family: 'Lato', sans-serif;
+  font-weight:300;
+  font-size: 20px;
+  text-align: center;
+  padding-top:20px;
+  max-width:400px;
+  margin: 0 auto;
+}
+
+.mobiledisplay {
+  max-width:375px;
+  min-width:375px;
+  /*height:667px;*/
+  height:605px;
+  overflow:hidden;
+  background-color:white;
+  /*background-color:#fafafa;*/
+  margin-top:50px;
+  margin: 0 auto;
+  z-index: 10000;
+}
+
+/*.mobileframetooltip {
+  width:375px;
+  height:667px;
+  overflow:hidden;
+  background-color:rgba(0,0,0,.1);
+  margin-top:50px;
+}
+*/
+.headerbreak {
+  margin-top:60px;
+  border-top:2px solid #e0e0e0;
+  margin-bottom:0px;
+  box-shadow: 3px 0px 2px #DCDCDC;
+}
+
+.mobileheaderbreak {
+  margin-top:60px;
+  border-top:2px solid #e0e0e0;
+  margin-bottom:0px;
+  box-shadow: 3px 0px 2px #DCDCDC;
+}
+
+.articlebreak {
+  border-top: 1px solid #e0e0e0;
+  width: 340px;
+  margin: 0 auto;
+  padding-top: 20px;
+  z-index:1000;
+
+}
+
+.menuicon {
+  height: 32px;
+  margin-top: 15px;
+}
+
+.iconback {
+  height: 20px;
+  margin-top: 20px;
+}
+
+.iconsave {
+  height: 35px;
+  margin-top: 14px;
+  margin-left: 20px;
+  text-align:center;
+}
+
+.iconsavepreview {
+  float:right;
+  height: 42px;
+  margin-right:20px;
+  margin-bottom:20px;
+}
+
+.articleimage {
+  height:350px;
+  overflow:hidden;
+}
+
+.tooltipmain {
+  position: absolute;
+  z-index: 1070;
+  display: block;
+  width:300px;
+  margin-top:150px;
+  margin-left:20px;
+}
+
+.tooltipread {
+  position: absolute;
+  right:20px;
+  z-index: 1070;
+  display: block;
+  width:310px;
+  margin-top:250px;
+}
+
+.tooltipdogear {
+  position: absolute;
+  right:20px;
+  z-index: 1070;
+  display: block;
+  width:310px;
+  margin-top:50px;
+}
+
+.tooltipback {
+  position: absolute;
+  z-index: 1070;
+  display: block;
+  width:310px;
+  margin-left:20px;
+  margin-top:40px;
+}
+
+.tooltipscroll {
+  position: absolute;
+  z-index: 1070;
+  display: block;
+  width:310px;
+  margin-top:230px;
+  margin-left:20px;
+}
+
+/*.tooltipmainseparate {
+  position: absolute;
+  z-index: 1070;
+  display: block;
+  line-height: 1.4;
+  visibility: visible;
+  opacity:10;
+  height:135px;
+  margin-top:-400px;
+  margin-left:500px;
+
+}*/
+
+.articletitle {
+  font-family: 'Nunito', sans-serif;
+  font-weight:400;
+  font-size: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+  line-height: 1.2;
+}
+
+.articledisplaytitle {
+  font-family: 'Nunito', sans-serif;
+  font-weight:400;
+  font-size: 30px;
+  margin-top:40px;
+  margin-left: 20px;
+  margin-right: 20px;
+  line-height: 1.2;
+
+}
+
+.articlegenre {
+  font-family: 'Nunito', sans-serif;
+  font-weight:300;
+  font-size: 20px;
+  margin-top:20px;
+  margin-left:20px;
+}
+
+.articlesource {
+  font-family: 'Nunito', sans-serif;
+  font-weight:300;
+  font-size: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top:15px;
+}
+
+.articlesourceauthor {
+  font-family: 'Nunito', sans-serif;
+  font-weight:300;
+  font-size: 17px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top:15px;
+}
+
+.articledate {
+  font-family: 'Nunito', sans-serif;
+  font-weight:300;
+  font-size: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom:20px;
+  color:#ABABAB;
+}
+
+.articlebody {
+  font-family: 'Nunito', sans-serif;
+  font-weight:300;
+  font-size: 17px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top:17px;
+  margin-bottom:10px;
+  line-height:1.6;
+  text-align:left;
+}
+
+
+.hasicon1 {
+  width: 62px;
+  height: 60px;
+  position: relative;
+}
+
+.hasicon2 {
+  width: 62px;
+  height: 60px;
+  position: relative;
+}
+
+
+.hasicon3 {
+  width: 62px;
+  height: 60px;
+  position: relative;
+}
+
+.hasicon4 {
+  width: 62px;
+  height: 60px;
+  position: relative;
+}
+
+
+.dogearappear {
+  width: 62px;
+  max-height: 58px;
+  min-height: 58px;
+  margin-top: 1px;
+  margin-left: -15px;
+}
+
+.whiteendbox {
+  height:40px;
+  width:40px;
+  background-color:white;
+}
+
+.footerbox {
+  height:62px;
+  background-color:white;
+}
+
+/*.fixedwidth {
+    max-width:1050px;
+}*/
+
+.toosmall {
+  display:none;
+}
+
+@media (min-width: 200px) and (max-width: 800px) {
+
+.prototype {
+  display:none;
+}
+
+.projectsynopsis {
+  display:none;
+}
+
+.toosmall {
+  display:block;
+  background:#B7E2DB;
+  padding:100px;
+  text-align:center;
+  height:100%
+}
+
+.toosmallimage {
+  margin-top:100px;
+}
+
+.putmeback {
+  font-family: 'Open Sans', sans-serif;
+  font-size:20px;
+  color:#6B6B6B;
+  font-weight:300;
+  padding:100px;
+  text-align:center;
+  margin-top:-50px;
+  }
+}
+

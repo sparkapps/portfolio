@@ -1,0 +1,174 @@
+
+/*@media (min-width: 1210px) {*/
+
+
+.prototype {
+  padding:80px;
+  background-color:#ededed;
+}
+
+
+.projectsynopsis {
+  padding:60px;
+  background-color:#fafafa;
+}
+
+
+.greeting {
+  text-align:right;
+  padding-right:50px;
+  /*padding-left:50px;*/
+  padding-top:30px;
+  font-family: 'Open Sans', sans-serif;
+  font-size:35px;
+  color:black;
+  font-weight:600;
+}
+
+.about {
+  text-align:right;
+  padding-right:50px;
+  padding-top:10px;
+  font-family: 'Open Sans', sans-serif;
+  font-size:15px;
+  color:black;
+  font-weight:300;
+  max-width:600px;
+  float:right;
+  line-height: 1.6667em;
+}
+
+.break {
+  width: 30px;
+  border: 1px solid black;
+  margin-right: 50px;
+  margin-top: 30px;
+  float:right;
+}
+
+.addpadding {
+  margin: 0 auto;
+  padding-right:100px;
+}
+
+.appmocks {
+  z-index:1;
+}
+
+.lefttip1 {
+  width:300px;
+  margin-top:200px;
+  position:absolute;
+  margin-left:10px;
+  z-index:4000000;
+  /*left-margin:-60px;*/
+}
+
+.righttip1 {
+  margin-top: 475px;
+  width:310px;
+  position:absolute;
+  z-index:4000000;
+  margin-left: 60px;
+}
+
+.lefttip2 {
+  width:300px;
+  margin-top:430px;
+  position:absolute;
+  margin-left:10px;
+  z-index:4000000;
+}
+
+.lefttip3 {
+  width:300px;
+  position:absolute;
+  margin-left:10px;
+  z-index:4000000;
+}
+
+@media (max-width: 768px) {
+
+.addpadding {
+  margin: 0 auto;
+
+}
+
+.appmocks {
+  z-index:1;
+}
+
+.lefttip1 {
+  width:270px;
+  margin-top:200px;
+  position:absolute;
+  margin-left:240px;
+  z-index:4000000;
+  /*left-margin:-60px;*/
+}
+
+.lefttip2 {
+  width:270px;
+  margin-top:200px;
+  position:absolute;
+  margin-left:240px;
+  z-index:4000000;
+  /*left-margin:-60px;*/
+}
+
+.lefttip3 {
+  width:270px;
+  margin-top:200px;
+  position:absolute;
+  margin-left:240px;
+  z-index:4000000;
+  /*left-margin:-60px;*/
+}
+
+.righttip1 {
+  margin-top: -200px;
+  width:300px;
+  position:absolute;
+  z-index:4000000;
+  margin-left:240px;
+}
+
+}
+
+.toosmall {
+  display:none;
+}
+
+@media (min-width: 200px) and (max-width: 800px) {
+
+.prototype {
+  display:none;
+}
+
+.projectsynopsis {
+  display:none;
+}
+
+.toosmall {
+  display:block;
+  background:#B7E2DB;
+  padding:100px;
+  text-align:center;
+  height:100%
+}
+
+.toosmallimage {
+  margin-top:100px;
+}
+
+.putmeback {
+  font-family: 'Open Sans', sans-serif;
+  font-size:20px;
+  color:#6B6B6B;
+  font-weight:300;
+  padding:100px;
+  text-align:center;
+  margin-top:-50px;
+  }
+}
+
